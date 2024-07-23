@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_proveedor">Proveedor</string>
+    <string name="menu_galeria">Galeria</string>
+    <string name="menu_musica">Musica</string>
+    <string name="andres_ramirez">Andres Ramirez</string>
+    <string name="analisis_y_desarrollo_de_software">Analisis y desarrollo de Software</string>
+
+    <string-array name="song_titles">
+        <item>"Shape of You" - Ed Sheeran</item>
+        <item>"Blinding Lights" - The Weeknd</item>
+        <item>"Uptown Funk" - Mark Ronson ft. Bruno Mars</item>
+        <item>"Rolling in the Deep" - Adele</item>
+        <item>"Billie Jean" - Michael Jackson</item>
+        <item>"Levitating" - Dua Lipa</item>
+        <item>"Hotel California" - Eagles</item>
+        <item>"Bohemian Rhapsody" - Queen</item>
+        <item>"Happier" - Marshmello ft. Bastille</item>
+        <item>"Someone Like You" - Adele</item>
+        <item>"Don't Start Now" - Dua Lipa</item>
+        <item>"Watermelon Sugar" - Harry Styles</item>
+        <item>"Shallow" - Lady Gaga and Bradley Cooper</item>
+        <item>"Levitating" - Dua Lipa ft. DaBaby</item>
+        <item>"Happy" - Pharrell Williams</item>
+        <item>"Smells Like Teen Spirit" - Nirvana</item>
+        <item>"Despacito" - Luis Fonsi ft. Daddy Yankee</item>
+        <item>"Blame It On The Boogie" - The Jacksons</item>
+        <item>"Sunflower" - Post Malone and Swae Lee</item>
+        <item>"Someone You Loved" - Lewis Capaldi</item>
+    </string-array>
+</resources>

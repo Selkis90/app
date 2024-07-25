@@ -4,15 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".ui.cliente.ClienteFragment">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="179dp"
-        android:layout_height="41dp"
-        android:text="vista cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vista Cliente"
+        android:textSize="20sp"
+        android:textColor="@color/on_primary"
+        android:background="@color/primary"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:elevation="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

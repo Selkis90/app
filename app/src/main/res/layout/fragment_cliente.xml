@@ -11,7 +11,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vista Cliente"
+        android:text="@string/vista_cliente"
         android:textSize="20sp"
         android:textColor="@color/on_primary"
         android:background="@color/primary"

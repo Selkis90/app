@@ -13,6 +13,8 @@
     <string name="menu_cliente">Cliente</string>
     <string name="andres_ramirez">Andres Ramirez</string>
     <string name="analisis_y_desarrollo_de_software">Analisis y desarrollo de Software</string>
+    <string name="ficha_tecnica">2758261</string>
+    <string name="vista_cliente">Vista Cliente</string>
 
     <string-array name="song_titles">
         <item>"Shape of You" - Ed Sheeran</item>

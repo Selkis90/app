@@ -8,15 +8,82 @@
 
     <TextView
         android:id="@+id/textProveedor"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:text="Crear Proveedor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/editTextNombreProveedor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.1"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/editTextNombreProveedor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Proveedor"
+        android:inputType="text"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textProveedor"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextDireccionProveedor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Dirección"
+        android:inputType="text"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNombreProveedor"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextContactoProveedor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Contacto"
+        android:inputType="text"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextDireccionProveedor"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextTelefonoProveedor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono"
+        android:inputType="phone"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextContactoProveedor"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonGuardarProveedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/editTextTelefonoProveedor"
+        app:layout_constraintHorizontal_bias="0.5" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

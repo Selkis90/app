@@ -6,27 +6,28 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
+import androidx.recyclerview.widget.RecyclerView
+
 
 class MusicaFragment : Fragment() {
 
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: CancionAdapter
-
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
+        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_musica, container, false)
 
-        recyclerView = view.findViewById(R.id.recyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        // Initialize RecyclerView
+        val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(context)
 
-        val songs = resources.getStringArray(R.array.song_titles)
-        adapter = CancionAdapter(songs)
-        recyclerView.adapter = adapter
+        // Get the list of songs from resources
+        val songTitles = resources.getStringArray(R.array.song_titles).toList()
+
+        // Set the adapter
+        recyclerView.adapter = SongAdapter(songTitles)
 
         return view
     }

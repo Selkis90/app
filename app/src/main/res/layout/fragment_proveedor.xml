@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.proveedor.ProveedorFragment">
+    tools:context=".ui.inicio.ProveedorFragment">
 
     <TextView
         android:id="@+id/textProveedor"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:hint="Nombre del Proveedor"
         android:inputType="text"
-        android:padding="8dp"
+        android:padding="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textProveedor"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:hint="Dirección"
         android:inputType="text"
-        android:padding="8dp"
+        android:padding="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextNombreProveedor"
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:hint="Contacto"
         android:inputType="text"
-        android:padding="8dp"
+        android:padding="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextDireccionProveedor"
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:hint="Teléfono"
         android:inputType="phone"
-        android:padding="8dp"
+        android:padding="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextContactoProveedor"
@@ -80,10 +80,20 @@
         android:layout_height="wrap_content"
         android:text="Guardar"
         android:padding="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonVerProveedores"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextTelefonoProveedor"
         app:layout_constraintHorizontal_bias="0.5" />
+
+    <Button
+        android:id="@+id/buttonVerProveedores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Proveedores"
+        app:layout_constraintTop_toBottomOf="@id/buttonGuardarProveedor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/> <!-- Espacio adicional entre los botones -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

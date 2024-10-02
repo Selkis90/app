@@ -15,6 +15,11 @@
     <string name="analisis_y_desarrollo_de_software">Analisis y desarrollo de Software</string>
     <string name="ficha_tecnica">2758261</string>
     <string name="vista_cliente">Vista Cliente</string>
+    <string name="t_tulo_1">Título 1</string>
+    <string name="todo">TODO</string>
+    <string name="descripci_n_breve_del_contenido_de_esta_tarjeta">Descripción breve del contenido de esta tarjeta.</string>
+    <string name="e">TODO</string>
+    <string name="t_tulo_2">Título 2</string>
 
     <string-array name="song_titles">
         <item>"Shape of You" - Ed Sheeran</item>

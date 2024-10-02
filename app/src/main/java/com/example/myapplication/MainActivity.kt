@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Context
 import android.os.Bundle
 import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
@@ -26,10 +27,26 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.appBarMain.toolbar)
 
+        // Guardar datos en SharedPreferences cuando se presiona el FAB
         binding.appBarMain.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+            val sharedPref = getSharedPreferences("MiPreferencia", Context.MODE_PRIVATE)
+            val editor = sharedPref.edit()
+            editor.putString("nombre", "UsuarioEjemplo")  // Guardar un valor simple
+            editor.putBoolean("isLoggedIn", true)         // Guardar un booleano
+            editor.apply()  // Aplicar cambios
+
+            // Mostrar un mensaje confirmando que se guardó la preferencia
+            Snackbar.make(view, "Datos guardados en SharedPreferences", Snackbar.LENGTH_LONG)
+                .setAction("Ver Datos") {
+                    // Recuperar los datos guardados cuando se presione "Ver Datos"
+                    val nombreGuardado = sharedPref.getString("nombre", "N/A")
+                    val estadoSesion = sharedPref.getBoolean("isLoggedIn", false)
+
+                    // Mostrar los datos recuperados en otro Snackbar
+                    Snackbar.make(view, "Nombre: $nombreGuardado, Sesión: $estadoSesion", Snackbar.LENGTH_LONG).show()
+                }.show()
         }
+
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)

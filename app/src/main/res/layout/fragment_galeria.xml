@@ -31,13 +31,14 @@
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_launcher_foreground"
-                android:background="@drawable/ic_launcher_foreground" />
+                android:background="@drawable/ic_launcher_foreground"
+                android:contentDescription="@string/todo" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="8dp"
-                android:text="Título 1"
+                android:text="@string/t_tulo_1"
                 android:textSize="16sp"
                 android:textColor="@color/background"
                 android:textStyle="bold" />
@@ -46,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="4dp"
-                android:text="Descripción breve del contenido de esta tarjeta."
+                android:text="@string/descripci_n_breve_del_contenido_de_esta_tarjeta"
                 android:textSize="14sp"
                 android:textColor="@color/background" />
         </LinearLayout>
@@ -76,13 +77,14 @@
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_launcher_foreground"
-                android:background="@drawable/ic_launcher_foreground" />
+                android:background="@drawable/ic_launcher_foreground"
+                android:contentDescription="@string/e" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="8dp"
-                android:text="Título 2"
+                android:text="@string/t_tulo_2"
                 android:textSize="16sp"
                 android:textColor="@color/background"
                 android:textStyle="bold" />

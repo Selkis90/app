@@ -16,10 +16,8 @@ class ClienteFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        clienteViewModel =
-            ViewModelProvider(this).get(ClienteViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_cliente, container, false)
+        clienteViewModel = ViewModelProvider(this)[ClienteViewModel::class.java]
         // Configura la vista aquí
-        return root
+        return inflater.inflate(R.layout.fragment_cliente, container, false)
     }
 }

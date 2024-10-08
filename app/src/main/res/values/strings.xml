@@ -7,7 +7,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_proveedor">Proveedor</string>
+
     <string name="menu_galeria">Galeria</string>
     <string name="menu_musica">Musica</string>
     <string name="menu_cliente">Cliente</string>
@@ -20,6 +20,13 @@
     <string name="descripci_n_breve_del_contenido_de_esta_tarjeta">Descripción breve del contenido de esta tarjeta.</string>
     <string name="e">TODO</string>
     <string name="t_tulo_2">Título 2</string>
+    <string name="sesi_n_iniciada">Sesión iniciada:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="proveedores">Proveedores</string>
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_proveedor">Proveedor</string>
+    <string name="menu_proveedores">Proveedores</string>
+
 
     <string-array name="song_titles">
         <item>"Shape of You" - Ed Sheeran</item>

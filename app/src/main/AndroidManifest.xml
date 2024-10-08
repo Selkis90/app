@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -22,6 +23,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.galeria.GaleriaActivity"
+            android:exported="true"
+            android:label="Galería" />
+
+        <activity
+            android:name=".ui.musica.MusicaActivity"
+            android:exported="true"
+            android:label="Música" />
+
+        <activity
+            android:name=".ui.cliente.ClienteActivity"
+            android:exported="true"
+            android:label="Cliente" />
+
     </application>
 
 </manifest>

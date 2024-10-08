@@ -7,18 +7,27 @@
         <item
             android:id="@+id/nav_inicio"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_proveedor" />
+            android:title="@string/menu_inicio" />
+
         <item
             android:id="@+id/nav_galeria"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_galeria" />
+
         <item
             android:id="@+id/nav_musica"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_musica" />
+
         <item
             android:id="@+id/nav_cliente"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_cliente" />
+
+        <!-- Agregar el item de "Proveedores" -->
+        <item
+            android:id="@+id/nav_proveedores"
+            android:icon="@drawable/ic_menu_proveedores"
+            android:title="@string/menu_proveedores" />  <!-- Asegúrate de que la cadena esté definida -->
     </group>
 </menu>

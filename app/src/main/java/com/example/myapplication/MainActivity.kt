@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
@@ -13,6 +14,10 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.ui.inicio.ProveedoresActivity
+import com.example.myapplication.ui.galeria.GaleriaActivity
+import com.example.myapplication.ui.musica.MusicaActivity
+import com.example.myapplication.ui.cliente.ClienteActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -50,19 +55,46 @@ class MainActivity : AppCompatActivity() {
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+
+        // Configuración de destinos principales, incluidos "Proveedores", "Galería", "Música", y "Cliente"
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_inicio, R.id.nav_galeria, R.id.nav_musica, R.id.nav_cliente
+                R.id.nav_inicio, R.id.nav_galeria, R.id.nav_musica, R.id.nav_cliente, R.id.nav_proveedores
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        // Manejar la selección de elementos del NavigationView
+        navView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.nav_proveedores -> {
+                    // Iniciar la nueva Activity para "Proveedores"
+                    startActivity(Intent(this, ProveedoresActivity::class.java))
+                    true
+                }
+                R.id.nav_galeria -> {
+                    // Iniciar la nueva Activity para "Galería"
+                    startActivity(Intent(this, GaleriaActivity::class.java))
+                    true
+                }
+                R.id.nav_musica -> {
+                    // Iniciar la nueva Activity para "Música"
+                    startActivity(Intent(this, MusicaActivity::class.java))
+                    true
+                }
+                R.id.nav_cliente -> {
+                    // Iniciar la nueva Activity para "Cliente"
+                    startActivity(Intent(this, ClienteActivity::class.java))
+                    true
+                }
+                else -> false
+            }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
+        // Inflar el menú; esto agrega ítems a la barra de acción si está presente.
         menuInflater.inflate(R.menu.main, menu)
         return true
     }
